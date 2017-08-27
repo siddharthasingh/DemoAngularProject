@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Add To Cart</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="myjs.js"></script>
+</head>
+<body>
+Hello Cart
+<div ng-controller="myAddToCartCtrl">
+                <div class="card" style="width: 20rem;">
+                        
+                        <div id="id1" class="card-body">
+                          <img class="card-img-top"  src="{{image}}" alt="Card image cap" ng-model="image">
+                          <h4 class="card-title" ng-model="bookname">{{bookname}}</h4>
+                          <!--p class="card-text" ng-model="author"></p-->
+                          <p class="card-text" ng-model="prize"></p>
+                          <input type="number" name="quantity" ng-bind="quantity">
+                          <p class="card-text" ng-bind="totalPrize"></p>
+                          <a href="#" class="btn btn-primary" ng-click="">ADD TO CART</a>
+                        </div>
+                      </div>
+                      </div>
+</body>
+</html>
