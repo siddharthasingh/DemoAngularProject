@@ -12,15 +12,15 @@
                     </nav>
                 </div>
                 <div class="card" style="width: 20rem;" ng-repeat="i in books">
-                        <img class="card-img-top"  src="images/sidd.jpg" alt="Card image cap" ng-model="img" >
+                        <!--img class="card-img-top"  src="images/sidd.jpg" alt="Card image cap" ng-model="img-->
                         <div class="card-body">
-                          <img class="card-img-top"  src="{{i.img}}" alt="Card image cap" ng-model="image">
+                          <img class="card-img-top"  src="{{i.img}}" alt="Card image cap" ng-model="img">
                           <h4 class="card-title">{{i.bookname}}</h4>
-                          <p class="card-text" >{{i.author}}</p>
-                          <p class="card-text" >{{i.prize}}</p>
+                          Author:<p class="card-text" >{{i.author}}</p>
+                          Prize:<p class="card-text" >{{i.prize}}</p>
                           Enter the quantity:<input class="card-text" type="number" name="quantity" id="quantity{{i.id}}">
                           <a href="#" class="btn btn-primary" ng-click="myAddToCart($event)">ADD TO CART</a>
                         </div>
                       </div>
          </body>      
-      </html>
+      </html> 
