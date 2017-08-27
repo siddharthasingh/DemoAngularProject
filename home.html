@@ -6,14 +6,14 @@
                 <script src="myjs.js"> </script>
                 <link href="mycss.css" rel="stylesheet">
             </head> 
-         <body ng-controller="myCtrl" class="b1"> 
+         <body class="b1" ng-controller="myAddToCartCtrl"> 
                 <div class="div1">
                     <nav class="navbar fixed-top navbar-light bg-light" style="background-color: #e3f2fd;">
                     </nav>
-                </div>
+                </div><div  ng-controller="myCtrl">
                 <div class="card" style="width: 20rem;" ng-repeat="i in books">
                         <!--img class="card-img-top"  src="images/sidd.jpg" alt="Card image cap" ng-model="img-->
-                        <div class="card-body">
+                        <div id="{{i.id}}" class="card-body">
                           <img class="card-img-top"  src="{{i.img}}" alt="Card image cap" ng-model="img">
                           <h4 class="card-title">{{i.bookname}}</h4>
                           Author:<p class="card-text" >{{i.author}}</p>
@@ -21,6 +21,7 @@
                           Enter the quantity:<input class="card-text" type="number" name="quantity" id="quantity{{i.id}}">
                           <a href="#" class="btn btn-primary" ng-click="myAddToCart($event)">ADD TO CART</a>
                         </div>
+                      </div>
                       </div>
          </body>      
       </html> 

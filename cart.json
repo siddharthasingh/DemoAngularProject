@@ -8,15 +8,15 @@
 						"id":"01",
 						"bookname":"Java The Complete Reference",
 						"author": "Herbert Schildt",
-						"prize" : "1000",
-						"quantity" : "1"
+						"prize" : 1000,
+						"quantity" : 1
 					},
 					{
 						"id":"02",
 						"bookname" :"Java in Short",
-						"age": "Siddhartha Singh",
-						"prize" : "1200",
-						"quantity" : "2"
+						"author": "Siddhartha Singh",
+						"prize" : 1200,
+						"quantity" : 2
 					}
 
 				]
