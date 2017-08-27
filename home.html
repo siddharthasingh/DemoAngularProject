@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+     <html ng-app="myApp">
+         <head>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+                <script src="myjs.js"> </script>
+                <link href="mycss.css" rel="stylesheet">
+            </head> 
+         <body ng-controller="myCtrl" class="b1"> 
+                <div class="div1">
+                    <nav class="navbar fixed-top navbar-light bg-light" style="background-color: #e3f2fd;">
+                    </nav>
+                </div>
+                <div class="card" style="width: 20rem;" ng-repeat="i in books">
+                        <img class="card-img-top"  src="images/sidd.jpg" alt="Card image cap" ng-model="img" >
+                        <div class="card-body">
+                          <h4 class="card-title"  >{{i.id}}</h4>
+                          <p class="card-text">{{i.author}}</p>
+                          <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+                      </div>
+         </body>      
+      </html>

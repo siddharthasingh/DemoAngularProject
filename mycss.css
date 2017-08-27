@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  background-color:#fff;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+p{
+    color:red;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    position: fixed;
+}
+
+.form-login {
+    width: 400px;
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30vh;
+}
+}
+
+.div1
+{
+    text-align: center;        
+}
+
+.card
+{
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+   
+   
+    margin: 1%;
+}
+
+.b1{
+background: #2900ff;
+background: linear-gradient(45deg, #2900ff, yellow);
+min-height: 100%;
+}
+
+
+.card-img-top{
+  border: none;
+  margin: 0 auto;
+}
+.card-img-top:hover, .btn btn-primary {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.btn-primary:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
